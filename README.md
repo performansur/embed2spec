@@ -1,10 +1,16 @@
 # embed2spec
 Code is messy, sorry for that in advance.
+
 In multiscale_convolution.py, you can find two of the models. We've tried various others but those two are the main models we've mostly used. Training code for multiscale model is also in this file.
+
 In training.py, you can find training code for simpler convolutional model (named CNN) that is defined in multiscale_convolution.py
+
 In discriminator.py, there is discriminator model and training code for GAN structure. It uses multiscale convolution decoder as generator.
+
 ModelEvaluator.py is the class that produces audio given the trained model.
+
 dataset.py consists of two dataset generators one with speaker information and one without.
+
 preprocess_fft.py takes log stft of dataset and stores it. 
 
 There are few points that are bugging me so that you can take a look at them first and tell me if there is something wrong. 
